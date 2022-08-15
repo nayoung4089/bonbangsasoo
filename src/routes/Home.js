@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react";
 import { dbService } from "fbase";
 import Nweet from "components/Nweet";
 import MyInput from "components/MyInput";
+import MyData from "components/MyData";
+import { useParams } from "react-router-dom";
+import Description from "components/Description";
 
 const Home = ({ userObj }) => {
+  const { id }= useParams();
   const [nweets, setNweets] = useState([]);
   useEffect(() => {
     dbService.collection("nweets").onSnapshot((snapshot) => {
@@ -13,9 +17,14 @@ const Home = ({ userObj }) => {
       }));
       setNweets(nweetArray);
     });
-  }, []);
+  }, [id]); //id가 바뀔 때마다 다시 불러줘 ~
   return (
     <div>
+      <div>
+        {MyData
+        .filter((data)=> data.id === id)
+        .map((dat)=> <Description dat={dat}/>)}
+      </div>
       <MyInput userObj={userObj}/>
       <div>
         {nweets.map((nweet) => (

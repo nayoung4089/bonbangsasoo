@@ -37,7 +37,7 @@ function App() {
       ) : (
         "Initializing..."
       )}
-      <footer>&copy; {new Date().getFullYear()} Nwitter</footer>
+      <footer>&copy; 세명한 본방사수</footer>
     </>
     );
   }
