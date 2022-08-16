@@ -40,7 +40,7 @@ input[type=submit] {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 .search-wrap{
     display: inline-block;

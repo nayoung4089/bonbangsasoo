@@ -21,3 +21,8 @@
     display: flex;
     margin-top:10px;
 }
+.nweet-wrap button{
+    color: var(--maincolor);
+    background-color: initial;
+
+}

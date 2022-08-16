@@ -47,7 +47,7 @@ const Nweet = ({ nweetObj, isOwner, id}) => {
           { (isOwner && nweetObj.where === id) && (
             <div class="box">
             <div>{nweetObj.text}</div>
-            <div>
+            <div class="nweet-wrap">
             <button onClick={onDeleteClick}><FontAwesomeIcon icon={faTrashCan} /></button>
             <button onClick={toggleEditing}><FontAwesomeIcon icon={faPenToSquare} /></button>
             </div>
