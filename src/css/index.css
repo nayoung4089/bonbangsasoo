@@ -1,0 +1,58 @@
+:root {
+    --maincolor: #78d024;
+    --grey: rgb(233, 233, 233);
+    --lightGrey: #ededed;
+    --shadow: rgb(214, 214, 214);
+    --chatColor: rgb(255, 235, 51);
+}
+body{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+a{
+    text-decoration-line: none;
+    color: black;
+}
+ul, li{
+    list-style: none;
+}
+ul {
+    padding-left:0;
+}
+form{
+    border: 2px solid var(--maincolor);
+    width: fit-content;
+    border-radius: 30px;
+}
+input {
+    border: 0;
+    padding: 15px;
+    outline: none;
+    border-radius: 30px;
+ }
+input[type=submit] {
+    text-align: center;
+    color: var(--maincolor);
+    background-color: initial;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.search-wrap{
+    display: inline-block;
+}
+footer{
+    padding: 20px;
+}
+button {
+    color: white;
+    border: 0;
+    background-color: var(--maincolor);
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 30px;
+}

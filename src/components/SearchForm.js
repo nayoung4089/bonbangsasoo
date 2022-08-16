@@ -23,7 +23,7 @@ const SearchForm = () => {
       }
     }
     return (
-        <>
+        <div class="search-wrap">
         <form onSubmit={onSubmit}>
             <input type="text" 
             onChange={onChange} 
@@ -32,7 +32,7 @@ const SearchForm = () => {
             />
             <input type="submit" value="검색" />
         </form>
-        </>
+        </div>
     )
 };
 export default SearchForm;

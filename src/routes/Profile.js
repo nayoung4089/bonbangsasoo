@@ -28,11 +28,12 @@ export default ({ userObj, refreshUser }) => {
     };
     return(
         <>
+        <div class="title">안녕하세요, {userObj.displayName}님!</div>
         <form onSubmit={onSubmit}>
             <input onChange={onChange} type="text" placeholder="display name" value={newDisplayName} />
-            <input type="submit" value="Update Profile" />
+            <input type="submit" value="업데이트" />
         </form>
-        <button onClick={onLogOutClick}>log out</button>
+        <button onClick={onLogOutClick}>로그아웃</button>
         </>
     )
 }

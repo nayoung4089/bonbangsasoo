@@ -4,8 +4,8 @@ import MyData from "components/MyData";
 const QuizFun = ({which, range}) => {
     const [select, setSelect] = useState([]);
     const selectedData = range.map((category) => MyData.filter(data => data.category == category));
+    // 이러면 array 속 array 값을 가져와야 해서 map을 2번 사용함 -> 이때 return 필수!
     console.log(selectedData);
-
     return(
         selectedData.map((datas)=>{
             return(

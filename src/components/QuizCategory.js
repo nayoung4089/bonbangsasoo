@@ -16,6 +16,7 @@ const QuizCategory = ({which}) => {
     }, [checkedList])
     return(
         <>
+        <div class="checkbox-grid">
         {CategoryList.map((category)=>{
             return(
                 <>
@@ -30,6 +31,7 @@ const QuizCategory = ({which}) => {
                 </>
             )
         })}
+        </div>
         <div>{checkedList}</div>
         <QuizFun which={which} range={checkedList}/>
         </>

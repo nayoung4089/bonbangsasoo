@@ -1,0 +1,31 @@
+.radio-wrap{
+    background-color: var(--lightGrey);
+    border: 0;
+    display: inline-block;
+}
+.radio-wrap li {
+    text-align: initial;
+    padding: 15px 70px;
+}
+.checkbox-grid {
+    padding: 20px;
+    background-color: var(--lightGrey);
+    border-radius: 30px;
+}
+.table_btn_ns, .table_btn_s{
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 1.05rem;
+}
+.table_btn_ns{
+    color: black;
+    background-color: white;
+    border-bottom: 1px solid var(--grey);
+}
+
+/* 클카용 */
+.button_container{
+    transition: all 0.5s linear;
+}

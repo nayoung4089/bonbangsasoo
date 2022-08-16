@@ -1,0 +1,23 @@
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px;
+}
+.sub, .point{
+    text-align: initial;
+    padding: 5px 0;
+}
+.point {
+    color: var(--maincolor);
+}
+.box-wrap{
+    padding: 20px;
+}
+.box{
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 30px;
+    justify-content: space-between;
+    display: flex;
+    margin-top:10px;
+}

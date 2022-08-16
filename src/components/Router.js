@@ -10,7 +10,7 @@ import Quiz from "routes/Quiz";
 const AppRouter =  ({isLoggedIn, userObj, refreshUser }) => {
     return (
         <Router>
-            {isLoggedIn && <Navigation userObj={userObj} />}
+            {isLoggedIn && <Navigation/>}
             <Routes>
                 {isLoggedIn ? 
                 <>
