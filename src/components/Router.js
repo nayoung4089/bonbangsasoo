@@ -7,6 +7,7 @@ import Navigation from "components/Navigation";
 import Profile from "routes/Profile";
 import Quiz from "routes/Quiz";
 
+
 const AppRouter =  ({isLoggedIn, userObj, refreshUser }) => {
     return (
         <Router>
@@ -16,7 +17,7 @@ const AppRouter =  ({isLoggedIn, userObj, refreshUser }) => {
                 <>
                 <Route path ="/" element={<Main />} />
                 <Route path ="/detail/:id" element={<Home userObj = {userObj} />} />
-                <Route path ="/quiz" element={<Quiz />} />
+                <Route path ="/quiz" element={<Quiz userObj = {userObj} />} />
                 <Route path ="/profile" element={<Profile userObj = {userObj} refreshUser={refreshUser} />} />
                 <Route path="*" element={ <Navigate to="/" /> } />
                 </> : 

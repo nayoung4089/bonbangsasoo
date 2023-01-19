@@ -20,8 +20,8 @@ const Auth = () => {
         <div class="auth-wrap">
             <AuthForm />
             <div>
-                <button onClick={onSocialClick} name="google">Continue with Google <FontAwesomeIcon icon={faGoogle} /></button>
-                <button onClick={onSocialClick} name="github"> Continue with Github <FontAwesomeIcon icon={faGithub} /></button>
+                <button onClick={onSocialClick} name="google"><FontAwesomeIcon icon={faGoogle} /> Google </button>
+                <button onClick={onSocialClick} name="github"><FontAwesomeIcon icon={faGithub} /> Github </button>
             </div>
         </div>
     )

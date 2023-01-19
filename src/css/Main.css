@@ -1,24 +1,21 @@
 .title-wrap{
     padding: 20px 0;
+    border-radius: 20px;
+    background-color: white;
 }
 .main-title {
-    font-size: 1.2rem;
-    background-color: var(--maincolor);
-    color: white;
-}
-.sub-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
-/* .ssub-title-wrap{
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-} */
+.sub-title {
+    font-size: 1rem;
+    background-color: rgba(244, 244, 244, 0.6);
+}
 .ssub-title{
-    background-color: var(--lightGrey);
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     padding: 10px 0;
-    border-bottom: 1px solid var(--grey);
     border-width: 50%;
+    background-color:var(--boxColor);
 }
 details[open] summary ~ * {
     animation: open 0.3s ease-in-out;

@@ -1,14 +1,16 @@
 :root {
+    --backColor: rgba(244, 244, 244, 0.3);
+    --boxColor: #f0f0f0;
+    --textColor: gray;
     --maincolor: #78d024;
-    --grey: rgb(233, 233, 233);
-    --lightGrey: #ededed;
-    --shadow: rgb(214, 214, 214);
-    --chatColor: rgb(255, 235, 51);
+    --lightGrey: #e0e0e0;
+    --kakaoColor: #F7E600;
 }
 body{
     margin: 0 auto;
     width: 300px;
     text-align: center;
+    background-color: var(--backColor);
 }
 a{
     text-decoration-line: none;
@@ -21,29 +23,42 @@ ul {
     padding-left:0;
 }
 form{
-    border: 2px solid var(--maincolor);
-    width: fit-content;
-    border-radius: 30px;
+    border: 2px solid var(--lightGrey);
+    border-radius: 20px;
+    margin: 30px 0;
+    background-color: white;
 }
 input {
     border: 0;
-    padding: 15px;
+    padding: 10px;
     outline: none;
-    border-radius: 30px;
+    border-radius: 20px;
  }
 input[type=submit] {
     text-align: center;
-    color: var(--maincolor);
+    color: var(--lightGrey);
     background-color: initial;
 }
 .nav{
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: right;
     margin: 40px 0;
+}
+.nav :link{
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin: 5px;
+    backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 1); border-radius: 20px; box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);   
+}
+.large{
+    text-align: initial;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .search-wrap{
     display: inline-block;
+    width: 100%;
 }
 footer{
     padding: 20px;
@@ -55,4 +70,8 @@ button {
     border-radius: 20px;
     padding: 5px 10px;
     margin-top: 30px;
+}
+/* 그림자 */
+.title-wrap, .nav :link, .card, .button_box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }

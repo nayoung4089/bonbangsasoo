@@ -38,13 +38,14 @@ const AuthForm = () => {
     }
     return(
         <>
+        <div class="title">웰컴 👋🎉</div>
         <form onSubmit ={onSubmit}>
-            <input name = "email" type ="text" placeholder="Email" required value={email} onChange={onChange}/>
-            <input name = "password" type="password" placeholder="Password" required value={password} onChange={onChange}/>
-            <input type="submit" value={newAccount ? "Create Account" : "Sign In"} />
+            <input name = "email" type ="text" placeholder="이메일" required value={email} onChange={onChange}/>
+            <input name = "password" type="password" placeholder="비밀번호" required value={password} onChange={onChange}/>
+            <input type="submit" value={newAccount ? "계정 만들기" : "로그인"} />
             {error}
         </form>
-        <span onClick={toggleAccount}>{newAccount ? "Sign In": "Create Account"}</span>
+        <button className="log button" onClick={toggleAccount}>{newAccount ? "로그인하기": "계정 만들기"}</button>
         </>
     )
 

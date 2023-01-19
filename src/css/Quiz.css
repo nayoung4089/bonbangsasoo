@@ -1,5 +1,5 @@
+/* 체크박스 3개 */
 .radio-wrap{
-    background-color: var(--lightGrey);
     border: 0;
     display: inline-block;
 }
@@ -9,23 +9,65 @@
 }
 .checkbox-grid {
     padding: 20px;
-    background-color: var(--lightGrey);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: initial;
+}
+
+.radio-wrap, .checkbox-grid{
+    background-color: var(--boxColor);
     border-radius: 30px;
+    margin: 30px 0;
+}
+/* 원하는 카테고리 */
+input[type="checkbox"], input[type="radio"] {
+    display: inline-block;
+}
+input[id="checkbox"]:checked + label::after{
+    content:'✔';
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+/* 퀴즈내용 */
+.quiz_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 10px;
+    margin-top: 30px;
+}
+.star{
+    margin:0;
+    width: 100%;
+    height: 20%;
+    border-radius: 10px 10px 0 0 ;
+    font-size: large;
+}
+.clicked{
+    background-color: var(--kakaoColor);
+}
+.non_clicked{
+    background-color: var(--maincolor);
+}
+.button_box{
+    border-radius: 10px;
 }
 .table_btn_ns, .table_btn_s{
     width: 100%;
     border-radius: 0;
     margin: 0;
-    padding: 15px 0;
+    padding: 15px 5px;
     font-size: 1.05rem;
+    min-height: 130px;
+    height: 80%;
+    border-radius: 0 0 10px 10px;
 }
 .table_btn_ns{
     color: black;
     background-color: white;
-    border-bottom: 1px solid var(--grey);
-}
-
-/* 클카용 */
-.button_container{
-    transition: all 0.5s linear;
 }

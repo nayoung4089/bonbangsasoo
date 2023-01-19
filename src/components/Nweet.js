@@ -30,6 +30,8 @@ const Nweet = ({ nweetObj, isOwner, id}) => {
     <div>
       {editing ? (
         <>
+        <div class="shadow-box"></div>
+        <div class="change-box">
           <form onSubmit={onSubmit}>
             <input
               type="text"
@@ -41,6 +43,7 @@ const Nweet = ({ nweetObj, isOwner, id}) => {
             <input type="submit" value="확인" />
           </form>
           <button onClick={toggleEditing}>취소</button>
+        </div>
         </>
       ) : (
         <>

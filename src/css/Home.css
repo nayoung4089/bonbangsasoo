@@ -1,3 +1,14 @@
+.card{
+    margin: 30px 0;
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.category{
+    background-color: var(--maincolor);
+    border-radius: 20px 20px 0 0;
+    color: white;
+}
 .title{
     font-size: 1.5rem;
     font-weight: bold;
@@ -13,16 +24,46 @@
 .box-wrap{
     padding: 20px;
 }
+.search-wrap-form{
+    margin: 0 20px;
+}
 .box{
-    background-color: var(--grey);
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
+    background-color: var(--boxColor);
     justify-content: space-between;
     display: flex;
     margin-top:10px;
 }
 .nweet-wrap button{
-    color: var(--maincolor);
+    color: var(--textColor);
     background-color: initial;
-
+    margin: 0;
+}
+/* 수정박스 */
+.shadow-box{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: rgb(0,0,0,0.3);
+}
+.change-box{
+    background-color: var(--boxColor);
+    padding: 20px;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 맨 밑의 화살표 */
+.page{
+    padding: 20px;
+}
+.page-arrow{
+    color: var(--textColor);
+    font-size: 1.5rem;
+    padding: 20px;
 }

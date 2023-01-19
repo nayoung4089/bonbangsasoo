@@ -6,10 +6,18 @@ import MyData from "components/MyData";
 import { useParams } from "react-router-dom";
 import Description from "components/Description";
 import "css/Home.css";
+import { Link } from "react-router-dom";
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const Home = ({ userObj }) => {
   const { id }= useParams();
   const [nweets, setNweets] = useState([]);
+  // 다음 페이지 넘어가기
+  const nextId= (parseInt(id) + 1).toString();
+  const backId= (parseInt(id) - 1).toString();
+
   useEffect(() => {
     dbService.collection("nweets").onSnapshot((snapshot) => {
       const nweetArray = snapshot.docs.map((doc) => ({
@@ -20,7 +28,7 @@ const Home = ({ userObj }) => {
     });
   }, [id]); //id가 바뀔 때마다 다시 불러줘 ~
   return (
-    <div>
+    <div class="detail card">
       <div>
         {MyData
         .filter((data)=> data.id === id)
@@ -36,6 +44,22 @@ const Home = ({ userObj }) => {
             id={id}
           />
         ))}
+      </div>
+      <div class="page">
+      <>
+      {backId === "0" ? 
+      null : 
+      <Link to ={`/detail/${backId}`}>
+        <FontAwesomeIcon icon={faAngleLeft} className="page-arrow"/>
+      </Link>}
+      </>
+      <>
+      {nextId === "10" ? 
+      null : 
+      <Link to ={`/detail/${nextId}`}>
+        <FontAwesomeIcon icon={faAngleRight} className="page-arrow"/>
+      </Link>}
+      </>
       </div>
     </div>
   );

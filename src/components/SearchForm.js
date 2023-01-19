@@ -27,10 +27,10 @@ const SearchForm = () => {
         <form onSubmit={onSubmit}>
             <input type="text" 
             onChange={onChange} 
-            placeholder="본초 검색하기" 
+            placeholder="본초 검색" 
             required
             />
-            <input type="submit" value="검색" />
+            <input type="submit" value="찾기" />
         </form>
         </div>
     )

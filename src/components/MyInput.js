@@ -21,7 +21,7 @@ const MyInput = ({userObj, id}) => {
       };
     return(
         <div class="search-wrap">
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="search-wrap-form">
             <input
               value={nweet}
               onChange={onChange}
