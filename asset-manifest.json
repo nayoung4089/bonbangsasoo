@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/bonbangsasoo/static/css/main.413ed242.css",
-    "main.js": "/bonbangsasoo/static/js/main.50849d39.js",
+    "main.css": "/bonbangsasoo/static/css/main.a6a04fba.css",
+    "main.js": "/bonbangsasoo/static/js/main.0a2f7fec.js",
     "index.html": "/bonbangsasoo/index.html",
-    "main.413ed242.css.map": "/bonbangsasoo/static/css/main.413ed242.css.map",
-    "main.50849d39.js.map": "/bonbangsasoo/static/js/main.50849d39.js.map"
+    "main.a6a04fba.css.map": "/bonbangsasoo/static/css/main.a6a04fba.css.map",
+    "main.0a2f7fec.js.map": "/bonbangsasoo/static/js/main.0a2f7fec.js.map"
   },
   "entrypoints": [
-    "static/css/main.413ed242.css",
-    "static/js/main.50849d39.js"
+    "static/css/main.a6a04fba.css",
+    "static/js/main.0a2f7fec.js"
   ]
 }
